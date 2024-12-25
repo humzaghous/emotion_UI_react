@@ -1,0 +1,145 @@
+/* App.css */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+.header {
+  background-color: #3498db;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  color: #fff;
+  font-size: 36px;
+  margin: 0;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.image-container {
+  margin-bottom: 20px;
+}
+
+.image-label {
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #3498db;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.image-label i {
+  margin-right: 10px;
+}
+
+.image-label:hover {
+  background-color: #2980b9;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.predict-button {
+  padding: 15px 30px;
+  font-size: 18px;
+  background-color: #27ae60;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  outline: none;
+  text-transform: uppercase;
+}
+
+.predict-button:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+.predict-button:hover {
+  background-color: #219653;
+  transform: scale(1.05);
+}
+
+.result-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.emotion-list,
+.emotion-count {
+  flex: 1;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  margin: 0 10px;
+  text-align: center;
+}
+
+h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 12px;
+  color: #555;
+  font-size: 18px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 16px;
+  text-align: left;
+  font-size: 18px;
+}
+
+th {
+  background-color: #3498db;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+td {
+  background-color: #fff;
+  color: #333;
+}
+
+@media screen and (max-width: 600px) {
+  .result-container {
+    flex-direction: column;
+  }
+}
